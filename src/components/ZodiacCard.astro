@@ -1,0 +1,25 @@
+---
+// src/components/ZodiacCard.astro
+const { name, icon, link } = Astro.props;
+---
+<a href={link} class="zodiac-card">
+  <img src={icon} alt={`${name} icon`} />
+  <h2>{name}</h2>
+</a>
+
+<style>
+.zodiac-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+.zodiac-card img {
+  width: 100px;
+  height: 100px;
+}
+.zodiac-card h2 {
+  margin-top: 10px;
+}
+</style>
