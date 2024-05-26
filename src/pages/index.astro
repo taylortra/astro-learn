@@ -1,26 +1,69 @@
 ---
 import Layout from '../layouts/Layout.astro';
 ---
-<Layout>
-  <div class="min-h-screen bg-gray-100 flex items-center justify-center">
-    <div class="max-w-md w-full bg-white shadow-md rounded-lg p-6">
-      <h1 class="text-2xl font-bold text-center mb-4">Astrology Insights</h1>
-      <p class="text-center mb-6">Explore the mystical world of astrology and discover your star sign.</p>
-      <div class="grid grid-cols-3 gap-4">
-        <div class="text-center">
-          <img src="/img/aries.jpg" alt="Aries" class="w-16 h-16 mx-auto mb-2">
-          <p>Aries</p>
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrology Basics</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white py-4">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl font-bold text-gray-800 text-center">Welcome to Astrology Basics</h1>
+            <p class="text-gray-600 text-center">Unlock the mysteries of the stars and learn about the fascinating world of astrology.</p>
         </div>
-        <div class="text-center">
-          <img src="/img/taurus.jpg" alt="Taurus" class="w-16 h-16 mx-auto mb-2">
-          <p>Taurus</p>
+    </header>
+	<Layout>
+		<div class="bg-gray-100 flex items-center justify-center h-full">
+			<div class="max-w-md w-full bg-pink-200 shadow-md rounded-lg p-6 border border-gray-300 rounded mt-8"> <!-- Added border classes here -->
+				<h1 class="text-2xl font-bold text-center mb-4">Astrology Insights</h1>
+				<p class="text-center mb-6">Explore the mystical world of astrology and discover your star sign.</p>
+				<div class="grid grid-cols-3 gap-4">
+					<div class="text-center">
+						<img src="/img/aries.jpg" alt="Aries" class="w-16 h-16 mx-auto mb-2">
+						<p>Aries</p>
+					</div>
+			  <div class="text-center">
+				<img src="/img/taurus.jpg" alt="Taurus" class="w-16 h-16 mx-auto mb-2">
+				<p>Taurus</p>
+			  </div>
+			  <div class="text-center">
+				<img src="/img/cancer.jpg" alt="cancer" class="w-16 h-16 mx-auto mb-2">
+				<p>Cancer</p>
+			  </div>
+			  <!-- Add more zodiac signs similarly -->
+			</div>
+		  </div>
+		</div>
+	  </Layout>
+    <section class="container mx-auto mt-8">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">About Astrology</h2>
+        <p class="text-gray-600">Astrology is the study of the positions and movements of celestial bodies, such as planets and stars, and their influence on human affairs and natural phenomena.</p>
+    </section>
+
+    <section class="container mx-auto mt-8">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">Daily Horoscopes</h2>
+        <p class="text-gray-600">Get insights into your day with our daily horoscope readings.</p>
+    </section>
+    
+
+    <section class="container mx-auto mt-8">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">Our Services</h2>
+        <ul class="text-gray-600">
+            <li class="mb-2">Daily Horoscopes</li>
+            <li class="mb-2">Birth Chart Readings</li>
+            <li class="mb-2">Astrology Courses</li>
+        </ul>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-4 mt-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Astrology Basics. All rights reserved.</p>
         </div>
-        <div class="text-center">
-          <img src="/img/cancer.jpg" alt="cancer" class="w-16 h-16 mx-auto mb-2">
-          <p>Cancer</p>
-        </div>
-        <!-- Add more zodiac signs similarly -->
-      </div>
-    </div>
-  </div>
-</Layout>
+    </footer>
+</body>
+</html>
+
